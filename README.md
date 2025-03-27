@@ -31,7 +31,7 @@ docker-compose up -d --build
 
 ### 3. Acessar o container do backend
 ```sh
-docker exec -it todo-app bash
+docker exec -it todo-api bash
 ```
 
 ### 4. Instalar dependências e configurar a aplicação
