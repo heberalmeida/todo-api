@@ -15,5 +15,6 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withExceptions(function (Exceptions $exceptions) {
-        //
-    })->create();
+        $exceptions->render(require base_path('app/Exceptions/RenderApiExceptions.php'));
+    })
+    ->create();
